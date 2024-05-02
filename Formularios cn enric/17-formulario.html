@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-formularios</title>
+    <link rel="stylesheet" href="./17-formulario.css">
+</head>
+
+<body>
+    <h1>Ejemplo de Control de Formulario</h1>
+    <hr>
+    <div class="container">
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Button</h3>
+
+            </div>
+            <div class="ejemplo">
+                <input type="button" id="button" value="button">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Checkbox</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                Seleccionar una Fruta Preferida:
+                <li><input type="checkbox" name="checkbox" id="checkbox1" value="Manzana">
+                    <label for="checkbox1"> Manzana</label>
+                </li>
+                <li><input type="checkbox" name="checkbox" id="checkbox2">
+                    <label for="checkbox2">Pera</label>
+                </li>
+                <li><input type="checkbox" name="checkbox" id="checkbox3">
+                    <label for="checkbox3">Melon</label>
+                </li>
+
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Color</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="color">Introducir un color:</label>
+                <input type="color" name="color" id="color">
+
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Date</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="date"> Introducir un dato: </label>
+                <input type="date" name="date" id="date" min="2006-01-01">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Datetime-local</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="datetime-local">Introducir un dato y hora: </label>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Email</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="email">Introducir un email: </label>
+                <input type="email"><button>email</button>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>File</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="file"> Seleccionar un archivo</label>
+                <input type="file">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Hidden</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="hidden"> no se ve la información solo el gestor </label>
+                <input type="hidden" id="hidden" value="formComprador">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Imagen</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <input type="image" id="image" name="image" src="./monster.png" width="100px" height="100px">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Month</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="month">Introducir el mes:</label>
+                <input type="month" id="month" name="month">
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Number</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="number"> Introducir un numero positivo y menor a 50</label><br>
+                <input type="number" name="number" id="number" min="0" max="50" step="3" value="number">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Password</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="username">Nombre:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="password" pattern="[5-8c-gh-s] {4,6}"
+                    style="text-decoration-style: double;">
+
+                <input minlength="6" maxlength="256" type="text" type="password" name="password" placeholder="password"
+                    autocomplete="off" id="password">
+            </div>
+
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Radio</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <fieldset>
+                    <label for="radio">cual te agrada más</label><br>
+                    <input type="radio" id="opcion1" name="esports">
+                    <label for="opcion1">Futbol</label>
+                    <input type="radio" id="opcion2" name="esports"><label for="opcion2">Basket</label><br>
+                    <input type="radio" id="opcion3" name="esports"><label for="opcion3">Hockey</label><br>
+                </fieldset>
+                <fieldset>
+                    <label for="radio">cual fruta te gusta</label><br>
+                    <input type="radio" id="opcion4" name="fruit">
+                    <label for="opcion4">Manzana</label><br>
+                    <input type="radio" id="opcion5" name="fruit">
+                    <label for="radio">Pera</label><br>
+                    <input type="radio" id="opcion6" name="fruit">
+                    <label for="opcion6">Melon</label>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Range</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="range"> Introducir o seleccionar un valor entre 0 y 100</label>
+                <input type="range" name="range" id="range" min="0" max="100" value="20" step="10">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Reset</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form action="/action_page.php">
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="fname" name="fname" value="panchito"><br>
+                    <br>
+                    <input type="reset" value="Reset" id="reset">
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Search</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search">
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Summit</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form action="https://www.google.com" target="_blank">
+                    <label for="Summit">Boton para realizar una acción: Abrir google: </label><br>
+                    <input type="submit" id="submit" value="Enviar"><br>
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Tel</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form>
+                    <label for="tel">Introduccir un numero de telefono:</label><br>
+                    <input type="tel" id="tel" name="telefono" pattern="123-4567">
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Texto</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form>
+                    <label for="text">Nombre:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Apellido:</label><br>
+                    <input type="text" id="text" name="text" max="10">
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>Time</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form>
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>URL</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form action="https://www.google.com">
+                    <label for="url">Añade tu página de inicio:</label>
+                    <input type="url" id="url" name="url">
+                </form>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="titulo">
+                <h3>week</h3>
+                <hr>
+            </div>
+            <div class="ejemplo">
+                <form>
+                    <label for="week">Selecciona una semana:</label>
+                    <input type="week" id="week" name="week">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
